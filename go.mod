@@ -1,4 +1,4 @@
-module github.com/mehul-tandel/pg_booking
+module github.com/mehul-tandel/beachhouse_booking
 
 go 1.17
 

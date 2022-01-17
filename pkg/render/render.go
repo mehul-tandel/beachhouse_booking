@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/mehul-tandel/pg_booking/pkg/config"
-	"github.com/mehul-tandel/pg_booking/pkg/models"
+	"github.com/mehul-tandel/beachhouse_booking/pkg/config"
+	"github.com/mehul-tandel/beachhouse_booking/pkg/models"
 )
 
 var app *config.AppConfig

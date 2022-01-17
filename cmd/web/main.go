@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/alexedwards/scs/v2"
-	"github.com/mehul-tandel/pg_booking/pkg/config"
-	"github.com/mehul-tandel/pg_booking/pkg/handlers"
-	"github.com/mehul-tandel/pg_booking/pkg/render"
+	"github.com/mehul-tandel/beachhouse_booking/pkg/config"
+	"github.com/mehul-tandel/beachhouse_booking/pkg/handlers"
+	"github.com/mehul-tandel/beachhouse_booking/pkg/render"
 )
 
 const portNumber = ":8080"
