@@ -1,0 +1,60 @@
+{{template "base" .}} {{define "content"}}
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img
+        src="/static/images/beachhouse2.jpg"
+        class="img-fluid img-thumbnail mx-auto d-block room-image"
+        alt="beach house"
+      />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <h1 class="text-center mt-4">Blue Cottage</h1>
+      <p>
+        Get ready to add the best beach vacation chapter yet to your life. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid ex
+        itaque facilis facere nulla vero, minus obcaecati a esse iusto harum
+        aspernatur saepe fuga est eaque praesentium, maiores molestias autem!
+        Doloribus, odio excepturi ducimus nemo neque minima repudiandae iusto
+        quibusdam deserunt quam ipsa fuga tenetur voluptates praesentium
+        blanditiis error!
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-center">
+      <a id="check-availability" href="#!" class="btn btn-success"
+        >Check Availability</a
+      >
+    </div>
+  </div>
+</div>
+{{end}}
+
+{{define "js"}}
+  <script>
+    document.getElementById("check-availability").addEventListener("click",()=>{
+      let html = `
+      <form id="check-availibility-form" action="" method="post" novalidate class="needs-validation">
+        <div class="form-row">
+          <div class="col">
+            <div class="form-row" id="reservation-dates-modal">
+              <div class="col">
+                <input disabled required class="form-control" type="text" name="start" id="start" placeholder="Arrival">
+              </div>
+              <div class="col">
+                <input disabled required class="form-control" type="text" name="end" id="end" placeholder="Arrival">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      `
+
+      attention.custom({msg: html, title: "Choose your dates"});
+    })
+  </script>
+{{end}}
